@@ -116,8 +116,14 @@
     },
     "demo": {
       "description": "Optional URL to the project demo.",
-      "format": "uri",
-      "type": "string"
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "uniqueItems": true,
+      "optional": true
     },
     "documentation": {
       "description": "Optional URLs to project documentation.",
