@@ -32,8 +32,13 @@ def test_positive(project_schema):
         ("audience-undefined.yaml", "'audience' is a required property"),
         ("blog-invalid.yaml", "'https://invalid/' is not a 'uri'"),
         ("blog-null.yaml", "None is not a 'uri'"),
-        ("demo-invalid.yaml", "'https://invalid/' is not a 'uri'"),
-        ("demo-null.yaml", "None is not a 'uri'"),
+        ("demo-invalid.yaml", "'xyz-abc' is not a 'uri'"),
+        ("demo-null.yaml", "None is not of type 'array'"),
+        ("demo-empty.yaml", "[] should be non-empty"),
+        (
+            "demo-non-unique.yaml",
+            "['https://example.com/demo1', 'https://example.com/demo1'] has non-unique elements",
+        ),
         ("documentation-empty.yaml", "[] should be non-empty"),
         (
             "documentation-invalid.yaml",
