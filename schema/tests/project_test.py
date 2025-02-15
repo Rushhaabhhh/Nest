@@ -32,7 +32,7 @@ def test_positive(project_schema):
         ("audience-undefined.yaml", "'audience' is a required property"),
         ("blog-invalid.yaml", "'https://invalid/' is not a 'uri'"),
         ("blog-null.yaml", "None is not a 'uri'"),
-        ("demo-invalid.yaml", "'https://invalid/' is not a 'uri'"),
+        ("demo-invalid.yaml", "'xyz-abc' is not a 'uri'"),
         ("demo-null.yaml", "None is not of type 'array'"),
         ("demo-empty.yaml", "[] should be non-empty"),
         (
@@ -103,3 +103,4 @@ def test_negative(project_schema, file_path, error_message):
         )
         == error_message
     )
+    
