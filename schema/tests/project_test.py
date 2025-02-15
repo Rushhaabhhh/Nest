@@ -103,4 +103,3 @@ def test_negative(project_schema, file_path, error_message):
         )
         == error_message
     )
-    
