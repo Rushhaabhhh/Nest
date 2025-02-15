@@ -1,6 +1,7 @@
 audience: breaker
 blog: https://blog.projec.com
-demo: https://some-demo-url.com
+demo:
+  - https://some-demo-url.com
 documentation:
   - https://example.com/docs1
   - https://example.com/docs2
