@@ -37,7 +37,7 @@ def test_positive(project_schema):
         ("demo-empty.yaml", "[] should be non-empty"),
         (
             "demo-non-unique.yaml",
-            "['https://example.com/demo1', 'https://example.com/demo1'] has non-unique elements",
+            "['https://example.com/demo1', 'https://example.com/demo2'] has non-unique elements",
         ),
         ("documentation-empty.yaml", "[] should be non-empty"),
         (
